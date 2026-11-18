@@ -1,0 +1,36 @@
+/* Small, stable adjustments only. Avoid template overrides. */
+
+.md-grid {
+  max-width: 92rem;
+}
+
+.md-typeset {
+  line-height: 1.65;
+}
+
+.md-typeset pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset table:not([class]) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset {
+    overflow-wrap: anywhere;
+  }
+
+  .md-typeset table:not([class]) {
+    font-size: 0.8rem;
+  }
+}
